@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <nav id="navegar" class="navegar">
+        <ul>
+            <li id="home">
+                <a href="index.html">Home</a>
+            </li>
+            <li id="about">
+                <a href="index.html#section2">Sobre Mim</a>
+            </li>
+            <li id="contato">
+                <a href="Contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="email"> 
+        <h1 class="h1email">eddyguarinello@outlook.com </h1>
+        
+        <form id="formcontato" action="https://formsubmit.co/949407af545a1f1ebf5fd810f4fe5737" method="POST"> 
+            <input type="hidden" name="_captcha" value="false">
+            <input id="nomecontato" type="text" name="nome" placeholder="Informe seu Nome" required> 
+            <input id="emailcontato" type="email" name="email" placeholder="informe seu e-mail" required>
+            <input type="hidden" name="_next" value="https://eddyguarinello.github.io/Eddy-repository/contato.html">
+            <textarea name="texto" id="boxcontato" rows="20" cols="80"placeholder="Digite sua mensagem aqui" maxlength="10000"></textarea>
+            <button type="submit" id="buttoncontato">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
