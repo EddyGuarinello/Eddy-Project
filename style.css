@@ -28,14 +28,17 @@ height: auto;
 }
 h1{
     text-align: center;
-    color:#D80032;
+    color:#aeaeae;
 }
 h2{
     text-align: center;
-    color:#D80032;
+    color:#aeaeae;
 }
 p{
     color:#EDF2F4;
+}
+.textColorAe{
+    color: #aeaeae;
 }
 #navegar{
     position:sticky;
