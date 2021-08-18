@@ -75,7 +75,7 @@ p{
     text-align: center;
     font-size: 23px;
 }
-#foto{
+.foto{
     display:block;
     width: 27%;
     
@@ -159,7 +159,7 @@ button{
     .h1email, .h1celular {
         font-size:25px
     }
-    #foto {
+    .foto {
         width: 45%;
     }
 }
@@ -173,7 +173,7 @@ button{
     .h1email {
         font-size:25px
     }
-    #foto {
+    .foto {
         width: 45%;
     }
     .rj {
