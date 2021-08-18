@@ -199,6 +199,10 @@ button{
     margin: auto;
     display: block;
 }
+#nomecontato, #emailcontato{
+    width: 300px;
+}
 #boxcontato{
     max-width: 95%;
+    border-radius: 10px;
 }
