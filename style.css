@@ -76,13 +76,28 @@ p{
     font-size: 23px;
 }
 .foto{
-    display:block;
+    display:flex;
     width: 27%;
-    
+    position: relative;
     border-radius:50%;
     margin-right: auto;
     margin-left: auto;
     padding: 4px;
+}
+#pixel {
+    width: 27%;
+    border-radius:50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 4px;
+    position: absolute;
+}
+.pixel{
+    display: none;
+}
+.wrapfotos{
+    display: flex;
+    justify-content: center;
 }
 #projetos{
     display: flex;
@@ -104,7 +119,8 @@ p{
 
 
 .rj{
-    border: 4px solid royalblue;
+    box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.66);
+    border: 4px solid rgb(138, 138, 138);
     display:block;
     width: 65%;;
     border-radius:50%;
@@ -112,8 +128,9 @@ p{
     margin-left: auto;
 }
 .about{
-    background: linear-gradient(145deg,#0F9471, #43E0B7);
-    border: 4px solid royalblue;
+    background-color: rgba(0, 0, 0, 0.5);    
+    box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.8);
+    border: 4px solid rgb(138, 138, 138);
     border-radius: 30px;
     width: 80%;
     margin: auto;
@@ -162,6 +179,9 @@ button{
     .foto {
         width: 45%;
     }
+    #pixel{
+        width:45%;
+    }
 }
 @media (max-width:768px){
     #projetos{
@@ -175,6 +195,9 @@ button{
     }
     .foto {
         width: 45%;
+    }
+    #pixel{
+        width:45%;
     }
     .rj {
         width: 80%;
