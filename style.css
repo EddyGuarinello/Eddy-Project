@@ -17,7 +17,11 @@ margin-bottom: 20px;
 #section2 {
 height: auto;
 }
-
+#nomeTitulo{
+    font-family: 'Cookie', cursive;
+    font-size: 60px;
+    margin: 0;
+}
 .titulo-site{
     width: 100%;
     text-align: center;
@@ -79,12 +83,12 @@ p{
     font-size: 23px;
 }
 .foto{
-    width: 27%;
-    
+    width: 27%;    
     border-radius:50%;
     margin-right: auto;
     margin-left: auto;
     padding: 4px;
+    display: block;
 }
 .toggle{
     display: none;
@@ -94,21 +98,37 @@ p{
     border-radius:50%;
     margin-right: auto;
     margin-left: auto;
-    padding: 4px;
-    
+    padding: 4px;    
 }
 .pixel{
     display: none;
 }
-
 .wrapfotos{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #projetos{
     display: flex;
     
     justify-content: space-evenly;
+}
+#cardGuess{
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: rgb(31, 98, 185);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    flex-direction: column;
+    }
+
+#cardGuess:hover{
+    cursor:pointer;
+    transition: all 0.5s 0s ease;
+    background-color: black;
 }
 .faixa{
     width: 100%;
@@ -121,6 +141,7 @@ p{
     border: 1px solid black;
     margin: 5px;
     color: #ffffff;
+    
 }
 
 

@@ -3,18 +3,40 @@ buttonFooter.addEventListener("click", function(){
     return location.href = '#section1';
 })
 
-let toggle = document.querySelector(".foto");
-let toggleb = document.querySelector("#pixel");
-
-toggleb.classList.toggle("pixel");
-
-toggle.addEventListener("click", function(){
-   toggle.classList.remove("foto");
-   toggle.classList.add("toggle");
-   toggleb.classList.remove("pixel");
+let cardGame = document.querySelector("#cardGuess");
+cardGame.addEventListener('click', function(){
+   return location.href = 'https://eddyguarinello.github.io/ProjetoCardGuess/'
 })
-toggleb.addEventListener("click", function(){
-    toggleb.classList.add("pixel");
-    toggle.classList.remove("toggle");
-    toggle.classList.add("foto");
+
+
+
+function pixelEddy(){
+    pixel.src="pixel.png"
+    pixel.id="pixel"
+    pixel.classList="toggle"
+    pixel.alt="Eddy Pixel"
+    pixel.title="Eddy Pixel"
+    fotos.appendChild(pixel);
+}
+let pixel = document.createElement("img");
+let fotos = document.querySelector(".wrapFotos");
+
+pixelEddy()
+
+
+let eddy = document.querySelector('#foto')
+
+
+eddy.addEventListener("click", function(){
+    pixel.classList.remove("toggle")
+    pixel.classList="foto"
+    eddy.classList="toggle"
 })
+
+pixel.addEventListener("click", function(){
+    eddy.classList.remove("toggle")
+    eddy.classList="foto"
+    pixel.classList="toggle"
+})  
+
+
