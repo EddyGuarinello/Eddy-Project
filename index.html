@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-       
+<body>       
         <nav id="navegar" class="navegar">
             <ul>
                 <li id="home">
@@ -24,11 +23,26 @@
                 <li id="about">
                     <a href="#section2">Sobre Mim</a>
                 </li>
-                <li id="contato">
-                    <a href="Contato.html">Contato</a>
+                <li>
+                    <a id="openContact">Contato</a>
                 </li>
             </ul>
         </nav>
+        <div id="containerContact" class="closeContact">
+            <div id="email"> 
+                <button class="close">X</button>
+                <h1 class="h1email">eddyguarinello@outlook.com </h1>
+                
+                <form id="formcontato" action="https://formsubmit.co/949407af545a1f1ebf5fd810f4fe5737" method="POST"> 
+                    <input type="hidden" name="_captcha" value="false">
+                    <input id="nomecontato" type="text" name="nome" placeholder="Informe seu Nome" required> 
+                    <input id="emailcontato" type="email" name="email" placeholder="informe seu e-mail" required>
+                    <input type="hidden" name="_next" value="https://eddyguarinello.github.io/Eddy-Project/">
+                    <textarea name="texto" id="boxcontato" rows="20" cols="80"placeholder="Digite sua mensagem aqui" maxlength="10000"></textarea>
+                    <button type="submit" id="buttoncontato">Enviar</button>
+                </form>
+            </div>
+        </div>
         <section id="section1">
             <header id="header">
                 <div class="titulo-site">

@@ -39,4 +39,19 @@ pixel.addEventListener("click", function(){
     pixel.classList="toggle"
 })  
 
+let close = document.querySelector(".close");
+
+let contact = document.querySelector("#containerContact");
+let openContact = document.querySelector("#openContact")
+
+openContact.addEventListener("click", function(evt){
+    
+    contact.classList="contato";
+})
+
+close.addEventListener("click", function(evt){
+    evt.preventDefault();
+    contact.classList="closeContact";   
+
+})
 

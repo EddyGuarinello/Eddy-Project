@@ -8,8 +8,10 @@ body {
     background: #41001E;
     position:relative;
     margin: 0;
+    display: flexbox;
+    justify-content: center;
+    flex-direction: column;
 }
-
 #section1 {
 height: auto;
 margin-bottom: 20px;
@@ -83,6 +85,7 @@ p{
     font-size: 23px;
 }
 .foto{
+    
     width: 27%;    
     border-radius:50%;
     margin-right: auto;
@@ -143,8 +146,6 @@ p{
     color: #ffffff;
     
 }
-
-
 .rj{
     box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.66);
     border: 4px solid rgb(138, 138, 138);
@@ -176,7 +177,6 @@ p{
 }
 .footer{
     display: flex;
-    position: absolute;
     margin: 0;
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
@@ -192,7 +192,56 @@ button{
     font-size: 18px;
     cursor: pointer;
 }
-
+/*parte exclusiva do contato */
+.contato{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+ }
+.close{
+    position: absolute;
+    right: 0;
+    color: teal;
+    background: rgba(0, 0, 0, 0.2);
+ }
+.h1email{
+    color: white;
+}
+#email {
+    
+    position: relative;
+    background-color: #221f22;
+    border-radius: 10px;
+}
+#formcontato{
+    text-align: center;
+}
+#nomecontato, #emailcontato, #boxcontato, #buttoncontato {
+    background-color: #c4c5c5;
+    margin: auto;
+    display: block;
+}
+#nomecontato, #emailcontato{
+    width: 90%;
+    border-radius: 5px;
+    border:3px solid black;
+    height: 20px;
+}
+#boxcontato{
+    border:3px solid black;
+    max-width: 90%;
+    border-radius: 5px;
+}
+.closeContact{
+    display: none;
+}
+#openContact:hover{
+    cursor: pointer;
+}
 @media (max-width:1024px){
     #projetos{
         display: flex;
@@ -200,7 +249,7 @@ button{
         flex-direction: column;
         align-items: center;
     }
-    .h1email, .h1celular {
+    .h1email{
         font-size:25px
     }
     .foto {
@@ -208,6 +257,9 @@ button{
     }
     #pixel{
         width:45%;
+    }
+    #boxcontato{
+        height: 35vh;
     }
 }
 @media (max-width:768px){
@@ -229,6 +281,14 @@ button{
     .rj {
         width: 80%;
     }
+    .contato{
+       
+        align-items: unset;
+  
+     }
+     #email{
+        height: fit-content;
+     }
     
 }
 @media (max-width:500px){
@@ -237,22 +297,14 @@ button{
        }
        
 }
-
-/*parte exclusiva do contato */
-#email {
-    padding-top: 50px;
-}
-#formcontato{
-    text-align: center;
-}
-#nomecontato, #emailcontato, #boxcontato, #buttoncontato {
-    margin: auto;
-    display: block;
-}
-#nomecontato, #emailcontato{
-    width: 300px;
-}
-#boxcontato{
-    max-width: 95%;
-    border-radius: 10px;
+@media (max-width:480px){
+    #boxcontato{
+        height: 30vh;
+    }
+    #email{
+        width: 90%;
+    }
+    .h1email{
+        font-size: 20px;
+    }
 }
