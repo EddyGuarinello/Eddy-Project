@@ -13,12 +13,15 @@ body {
 }
 #section1 {
 height: auto;
-margin-bottom: 20px;
 }
 #section2 {
-    margin: 5px;
-    padding-bottom: 10px;
-    background-color: #2b8282a3;
+   background-color: #077A8C;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#section3{
+   background-color: #063840;
 }
 /* globais */
 h1{
@@ -88,7 +91,6 @@ p{
 
 /* Foto + Pixel */
 .foto{
-    
     width: 360px;    
     border-radius:50%;
     margin-right: auto;
@@ -126,42 +128,81 @@ p{
 /* Projetos */
 #projetos{
     display: flex;
-    
     justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+#cardGuessBox{
+    display: flex;
+    border-bottom: 1px solid yellow;
 }
 #cardGuess{
     border: 2px solid black;
     border-radius: 12px;
-    background-color: rgb(31, 98, 185);
+    background-color: black;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
     flex-direction: column;
+    animation: cardBlink 5s infinite;
     }
-
+#cardGuessAbout{
+    color: white;
+}
+#cardMessage{
+    animation: colorBlink 15s infinite;
+}    
+@keyframes cardBlink{
+    0% {background-color: black;}
+    50% {background-color: rgb(31, 98, 185);}
+    100% {background-color: black;}
+}
+@keyframes colorBlink {
+    0%  {color: rgb(31, 98, 185)}
+   25%  {color: green} 
+   50%  {color: yellow}
+   75%  {color: red}
+  100%  {color: purple}   
+}
 #cardGuess:hover{
     cursor:pointer;
     transition: all 0.5s 0s ease;
     background-color: black;
 }
+.notReady{
+    display: flex;
+    border-bottom: 1px solid yellow;
+}
+
 .faixa{
     width: 100%;
 }
 .projetos:nth-of-type(1),.projetos:nth-of-type(2),.projetos:nth-of-type(3){
     border-radius: 12px;
     background-color: rgb(0, 0, 0);
-    width: 400px;
-    height: 300px;
+    width: 270px;
+    height: 180px;
     border: 1px solid black;
     margin: 5px;
-    color: #ffffff;
-    
+    color: #ffffff;    
+}
+.projetosAbout, .notReadyAbout {
+    width: 270px;
+    height: 180px;
+    color: white;
 }
 /* Projetos */
 
 /* Sobre mim */
+#wrapAbout{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .rjBox{
     padding-top: 25px;
 }
@@ -169,8 +210,7 @@ p{
     box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.66);
     border: 4px solid rgb(138, 138, 138);
     display:block;
-    width: 65%;;
-    border-radius:50%;
+    width: 65%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -268,12 +308,7 @@ button{
     cursor: pointer;
 }
 @media (max-width:1024px){
-    #projetos{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-    }
+
     .h1email{
         font-size:25px
     }
@@ -318,7 +353,7 @@ button{
       
 }
 @media (max-width:480px){
-    .projetos:nth-of-type(1), .projetos:nth-of-type(2){
+    .notReady, .notReadyAbout {
         display: none;
     }
     #boxcontato{
@@ -342,5 +377,18 @@ button{
     .sobremim1{
         font-size: 20px;
     }
-    
+    #wrapAbout{
+        margin: 0;
+    }
+    #cardGuessBox{
+        flex-direction: column;
+    }
+    #cardGuessAbout{
+        margin-left: 5%;
+    }
+    #cardGuess{
+        width: 270px;
+        height: 180px;
+    }
 }
+
