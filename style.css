@@ -15,13 +15,28 @@ body {
 height: auto;
 }
 #section2 {
-   background-color: #077A8C;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    background-image: url("tea.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section2 p{
+    color: rgb(0 83 250);
+    font-weight: 700;
 }
 #section3{
-   background-color: #063840;
+    background-color: #063840;
+    background-image: url("Rio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* globais */
 h1{
@@ -132,6 +147,7 @@ p{
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    background-color: rgba(255,255,255, 0.4);
 }
 #cardGuessBox{
     display: flex;
@@ -150,7 +166,7 @@ p{
     animation: cardBlink 5s infinite;
     }
 #cardGuessAbout{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 #cardMessage{
     animation: colorBlink 15s infinite;
@@ -192,7 +208,10 @@ p{
 .projetosAbout, .notReadyAbout {
     width: 270px;
     height: 180px;
-    color: white;
+    color: black;
+    width: 270px;
+    height: 180px;
+    margin: 5px;
 }
 /* Projetos */
 
@@ -203,17 +222,7 @@ p{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.rjBox{
-    padding-top: 25px;
-}
-.rj{
-    box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.66);
-    border: 4px solid rgb(138, 138, 138);
-    display:block;
-    width: 65%;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 .about{
     background-color: rgba(0, 0, 0, 0.5);    
     box-shadow: 1px 0px 5px 5px rgba(0,0,0,0.5);
