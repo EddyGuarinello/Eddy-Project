@@ -1,2 +1,5 @@
 # Eddy-Project
- projetos html/css/js
+
+
+Projeto feito no início da minha jornada em html/css/js vanilla.
+As informações contidas nesta página estão desatualizadas.
